@@ -7,9 +7,7 @@ x<-mtcars$mpg
 #From the above vector of values a random sample of size 4 with replacement is generated using sample() function in R.
 sample<-sample(x,size=4,replace = TRUE)
 sample
-#Now, we need more samples from this population to plot the sampling distribution of 
-#the statistic under study. replicate() function is used to generate some 1000 samples 
-#from this population
+#Now, we need more samples from this population to plot the sampling distribution of the statistic under study. replicate() function is used to generate some 1000 samples from this population
 #samples<-replicate(1000,sample(x,size=4,replace  =  TRUE))
 #Statistics such as sample mean, range, etc. can be computed for each sample using 
 #replicate() function in R. For example,
@@ -19,5 +17,3 @@ hist(sample_means,main="sample  means")
 #The sampling distribution of sample range is obtained as follows
 sample_ranges<-replicate(1000,diff(range(sample(x,size=4,replace= TRUE))))
 hist(sample_ranges,main="sample  range")
-
-
