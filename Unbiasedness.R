@@ -4,4 +4,4 @@ library(readxl)
 practical2_data <- read_excel("F:/Inference/practical2_data.xlsx")
 View(practical2_data) # to view
 population=practical2_data
-population
+#To check the changes
